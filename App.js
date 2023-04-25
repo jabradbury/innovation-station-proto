@@ -20,14 +20,19 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    alert(formData);
     // Send data to server or perform desired action
   };
 
   return (
-    <div>
+    <div className="top">
       <h1>Innovation Station</h1>
       <h2>Please Submit Your Idea!</h2>
       <form className="form-container" onSubmit={handleSubmit}>
+        <div className="anonymous">
+          <label htmlFor="anonymous">Anonymous</label>
+          <input type="checkbox" name="anonymous" ></input>
+        </div>
         <div className="form-row">
           <label htmlFor="role">Role:</label>
           <input
@@ -36,6 +41,7 @@ const Form = () => {
             value={formData.role}
             onChange={handleInputChange}
             required
+            placeholder="i.e Developer"
           />
         </div>
         <div className="form-row">
@@ -46,6 +52,7 @@ const Form = () => {
             value={formData.want}
             onChange={handleInputChange}
             required
+            placeholder="i.e New Laptop"
           />
         </div>
         <div className="form-row">
@@ -56,6 +63,7 @@ const Form = () => {
             value={formData.reason}
             onChange={handleInputChange}
             required
+            placeholder="i.e New Project"
           />
         </div>
         <div className="form-row">
@@ -66,6 +74,7 @@ const Form = () => {
             value={formData.message}
             onChange={handleInputChange}
             required
+            placeholder="i.e I need a new laptop to start the next work project as my current one is dying."
           ></textarea>
         </div>
         <div className="form-row">
