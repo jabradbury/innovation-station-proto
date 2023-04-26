@@ -29,10 +29,10 @@ const Form = () => {
       <h1>Innovation Station</h1>
       <h2>Please Submit Your Idea!</h2>
       <form className="form-container" onSubmit={handleSubmit}>
-        <div className="anonymous">
+        {/* <div className="anonymous">
           <label htmlFor="anonymous">Anonymous</label>
           <input type="checkbox" name="anonymous" ></input>
-        </div>
+        </div> */}
         <div className="form-row">
           <label htmlFor="role">Role:</label>
           <input
