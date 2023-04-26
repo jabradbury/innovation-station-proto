@@ -31,16 +31,7 @@
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 10px;
-}
-
-.navbar__title-container {
-  flex: 1;
-  text-align: center;
-}
-
-.navbar__title {
-  font-size: 24px;
-  margin: 0;
+  max-width: 250px;
 }
 
 .navbar__button-container {
