@@ -1,9 +1,13 @@
-.form-container {
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.884), grey);
-}
-
-.top {
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.884), grey);
+.form-container, .top {
+  background: linear-gradient(
+    180deg,
+    rgba(222, 222, 222, 255) 0%,
+    #F8F8F8 50%,
+    #FFFFFF 50%,
+    #F8F8F8 53.12%,
+    rgba(248, 248, 248, 0.2) 96.54%,
+    #CCCCCC 99.98%,
+    rgba(98, 98, 98, 0) 100%)
 }
 
 .form-container {
@@ -15,7 +19,7 @@
   color: #333;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .form-row {
@@ -80,3 +84,4 @@ button[type="submit"]:hover {
 .logout {
   margin: 5px;
 }
+
